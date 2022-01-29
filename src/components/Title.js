@@ -15,7 +15,7 @@ function Title() {
   return (
     <div className="Title">
       <h1>REACT@DATATABLES</h1>
-      <a href="https://react.school" target="_blank">
+      <a href="https://github.com/mohanrajlearn/Reactjs-MultipleTables" target="_blank">
   <Button> Download </Button>
 </a> 
 </div>
