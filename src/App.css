@@ -172,6 +172,8 @@ a {
   text-align: left;
 }
 
+/* Mobile device responsive */
+
 @media screen and (max-width: 600px) {
   body {
 
