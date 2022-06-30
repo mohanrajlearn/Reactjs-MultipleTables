@@ -62,7 +62,7 @@ export const PaginationTable = () => {
           })}
         </tbody>
       </table>
-      <div style={pageStyle}>
+      <div class="pageStyle">
         <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
         </button>{' '}
@@ -81,7 +81,7 @@ export const PaginationTable = () => {
             {pageIndex + 1} of {pageOptions.length}
           </strong>{' '}
         </span>
-        <span>
+        <span class="page">
           | Go to page:{' '}
           <input
             type='number'
@@ -90,7 +90,7 @@ export const PaginationTable = () => {
               const pageNumber = e.target.value ? Number(e.target.value) - 1 : 0
               gotoPage(pageNumber)
             }}
-            style={{ width: '50px' }}
+            style={{ width: '30px' }}
           />
         </span>{' '}
         <select
@@ -108,8 +108,8 @@ export const PaginationTable = () => {
 };
 
 
-const pageStyle = {
-  marginLeft: "380px",
-  marginTop: "50px"
-};
+// const pageStyle = {
+//   marginLeft: "380px",
+//   marginTop: "50px"
+// };
 export default PaginationTable;

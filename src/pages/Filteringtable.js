@@ -41,10 +41,11 @@ export const FilteringTable = () => {
 
   return (
     <>
-    <div>
+    <div class="responsive">
+    <div >
     <h1 className="Btable">Filtering Table</h1>
     </div>
-      <div style={globalFilterStyle}><GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} /></div>
+      <div class="globalFilterStyle"><GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} /></div>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (
@@ -70,6 +71,7 @@ export const FilteringTable = () => {
             )
           })}
         </tbody>
+        
         <tfoot>
           {footerGroups.map(footerGroup => (
             <tr {...footerGroup.getFooterGroupProps()}>
@@ -80,12 +82,13 @@ export const FilteringTable = () => {
           ))}
         </tfoot>
       </table>
+      </div>
     </>
   );
 };
 
-const globalFilterStyle = {
-  marginLeft: "380px",
-  marginTop: "20px"
-};
+// const globalFilterStyle = {
+//   marginLeft: "380px",
+//   marginTop: "20px"
+// };
 export default FilteringTable;

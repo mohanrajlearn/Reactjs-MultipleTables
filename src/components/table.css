@@ -1,10 +1,10 @@
 table {
   font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
- /* table-layout: fixed;*/
+  /* table-layout: fixed;*/
   border-collapse: collapse;
-  width: 75%;
+  width: 70%;
   margin-left: 380px;
-  
+  /* display: flex;  */
 }
 
 table td {
@@ -22,16 +22,128 @@ table tr:hover {
 }
 
 table th {
-  
+
   border: 1px solid #ddd;
   padding: 8px;
   width: 0%;
   text-align: left;
-  background-color: #4caf50;
+  background-color: #24397a;
   color: white;
 }
 
+.globalFilterStyle {
+  margin-left: 380px;
+  margin-top: 20px;
+}
 
- 
+.pageStyle {
+  margin-left: 380px;
+  margin-top: 50px;
+}
 
- 
+.pageStyle1 {
+  margin-left: 380px;
+  margin-bottom: 50px;
+}
+
+.headerStyle {
+  font-size: 20px;
+  padding: 20px 5px;
+
+}
+
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+
+@media screen and (max-width: 600px) {
+  table {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    /* table-layout: fixed;*/
+    border-collapse: collapse;
+    width: auto;
+    height: auto;
+    margin-left: 110px;
+    font-size: xx-small;
+
+
+  }
+
+  table td {
+    border: 1px solid #ddd;
+    padding: 1px;
+    margin-left: 0px;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  table tr:hover {
+    background-color: #ddd;
+  }
+
+  table th {
+
+    border: 1px solid #ddd;
+    padding: 1px;
+    width: 0%;
+    text-align: left;
+    background-color: #24397a;
+    color: white;
+  }
+
+  .globalFilterStyle {
+    margin-left: 110px;
+    margin-top: 10px;
+    width: 50%;
+
+  }
+
+  .responsive {
+    overflow-x: auto;
+  }
+
+  .pageStyle {
+    margin-left: 80px;
+    margin-top: 50px;
+    font-size: x-small;
+    padding: 1px 1px 1px 1px;
+
+    width: 60%;
+  }
+
+  .page {
+
+    margin-left: 1px;
+  }
+
+  #alignment {
+    float: right;
+  }
+
+  .pageStyle1 {
+    margin-left: 150px;
+    height: 50%;
+    width: 50%;
+  }
+
+  .headerStyle {
+    font-size: 10px;
+    padding: 20px 5px;
+
+  }
+
+}

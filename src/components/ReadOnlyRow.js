@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from 'react-router-dom';
 
 const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
   return (
@@ -6,7 +7,12 @@ const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
       <td>{contact.email}</td>
       <td>{contact.first_name}</td>
       <td>{contact.last_name}</td>
-      <td>{contact.avatar}</td>
+      {/* <td><Link target="_blank" to={{ pathname: `${contact.avatar}` }}>Avatar image </Link></td> */}
+      <td><img
+        src={contact.avatar}
+        width={30}
+        alt='Player'
+      /></td>
       <td>
         <button
           type="button"

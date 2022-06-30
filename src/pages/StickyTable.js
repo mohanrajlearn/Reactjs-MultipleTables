@@ -30,9 +30,11 @@ export const StickyTable = () => {
 
   return ( 
       <>
+      
       <div>
     <h1 className="Btable">Sticky Table</h1>
     </div>
+    <div id="alignment">
     <Styles>
       <div {...getTableProps()} className="table sticky" style={{ width: 750, height: 500 }}>
         <div className="header">
@@ -61,7 +63,9 @@ export const StickyTable = () => {
           })}
         </div>
       </div>
+      
     </Styles>
+    </div>
       </>
     )
     

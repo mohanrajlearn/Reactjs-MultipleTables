@@ -36,7 +36,7 @@ export const COLUMNS = [
     Cell: tableProps => (
       <img
         src={tableProps.row.original.avatar}
-        width={60}
+        width={30}
         alt='Player'
       />
     )

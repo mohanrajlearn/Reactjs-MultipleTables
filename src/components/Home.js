@@ -9,13 +9,14 @@ import StickyTable from '../pages/StickyTable';
 import RowSelection from '../pages/RowSelection';
 import OperationsTable from '../pages/OperationsTable'; 
 import Content from '../pages/Content';
+import HomePage from '../pages/HomePage';
 
 const Home = () => {
     return ( 
         <div>
             <Router>
             <Switch>
-                <Route path='/' exact component={BasicTable} />
+                <Route path='/' exact component={HomePage} />
                 <Route path='/BasicTable' exact component={BasicTable} />
                 <Route path='/FilteringTable' component={FilteringTable} />
                 <Route path='/PaginationTable' component={PaginationTable} />

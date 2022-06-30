@@ -151,8 +151,8 @@ export const OperationsTable = () => {
           </tbody>
         </table>
       </form>
-      <div style={pageStyle}>
-      <h2 style = {headerStyle} >Add a Contact</h2>
+      <div class="pageStyle1">
+      <h4 class = "headerStyle" >Add a Contact</h4>
       <form onSubmit={handleAddFormSubmit}>
       <input
           type="text"
@@ -192,15 +192,15 @@ export const OperationsTable = () => {
 };
 
 
-const pageStyle = {
-  marginLeft: "380px",
-  marginTop:"2px"
-};
+// const pageStyle = {
+//   marginLeft: "380px",
+//   marginBottom:"50px"
+// };
 
-const headerStyle = {
-  fontSize: "25px",
-  padding: "20px 5px"
+// const headerStyle = {
+//   fontSize: "20px",
+//   padding: "20px 5px"
   
-};
+// };
 
 export default OperationsTable;

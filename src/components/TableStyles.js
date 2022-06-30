@@ -1,6 +1,16 @@
 import styled from 'styled-components'
 
 export const Styles = styled.div`
+@media (max-width: 600px) {
+  
+  .table {
+     
+  font-size: x-small; 
+   
+  }
+  
+
+}
   .table {
     border: 1px solid #ddd;
     table-layout: fixed;
