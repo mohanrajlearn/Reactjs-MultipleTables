@@ -36,25 +36,25 @@ export const StickyTable = () => {
     </div>
     <div id="alignment">
     <Styles>
-      <div {...getTableProps()} className="table sticky" style={{ width: 750, height: 500 }}>
+      <div className="table sticky" {...getTableProps()} >
         <div className="header">
           {headerGroups.map((headerGroup) => (
-            <div {...headerGroup.getHeaderGroupProps()} className="tr">
+            <div className="tr" {...headerGroup.getHeaderGroupProps()} >
               {headerGroup.headers.map((column) => (
-                <div {...column.getHeaderProps()} className="th">
+                <div className="th" {...column.getHeaderProps()} >
                   {column.render('Header')}
                 </div>
               ))}
             </div>
           ))}
         </div>
-        <div {...getTableBodyProps()} className="body">
+        <div className="body" {...getTableBodyProps()}>
           {firstPageRows.map((row) => {
             prepareRow(row);
             return (
-              <div {...row.getRowProps()} className="tr">
+              <div className="tr" {...row.getRowProps()}>
                 {row.cells.map((cell) => (
-                  <div {...cell.getCellProps()} className="td">
+                  <div className="td" {...cell.getCellProps()}>
                     {cell.render('Cell')}
                   </div>
                 ))}

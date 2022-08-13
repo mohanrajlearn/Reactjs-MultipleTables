@@ -1,4 +1,5 @@
 import React from "react";
+import '../components/table.css'
 
 const EditableRow = ({
   editFormData,
@@ -7,8 +8,8 @@ const EditableRow = ({
 }) => {
   return (
     <tr>
-      <td>
-        <input
+      <td> 
+        <input className="ops2"
           type="text"
           required="required"
           placeholder="Enter a email..."
@@ -18,7 +19,7 @@ const EditableRow = ({
         ></input>
       </td>
       <td>
-        <input
+        <input className="ops"
           type="text"
           required="required"
           placeholder="Enter an first name..."
@@ -28,7 +29,7 @@ const EditableRow = ({
         ></input>
       </td>
       <td>
-        <input
+        <input className="ops"
           type="text"
           required="required"
           placeholder="Enter a last name..."
@@ -38,7 +39,7 @@ const EditableRow = ({
         ></input>
       </td>
       <td>
-        <input
+        <input className="ops"
           type="link"
           required="required"
           placeholder="Enter an avatar..."
@@ -48,8 +49,8 @@ const EditableRow = ({
         ></input>
       </td>
       <td>
-        <button type="submit">Save</button>
-        <button type="button" onClick={handleCancelClick}>
+        <button type="submit" className="ops">Save</button>
+        <button type="button" className="ops" onClick={handleCancelClick}>
           Cancel
         </button>
       </td>

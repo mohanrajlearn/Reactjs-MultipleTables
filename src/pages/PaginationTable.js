@@ -66,13 +66,13 @@ export const PaginationTable = () => {
         <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {'<<'}
         </button>{' '}
-        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+        <button className="page" onClick={() => previousPage()} disabled={!canPreviousPage}>
           Previous
         </button>{' '}
-        <button onClick={() => nextPage()} disabled={!canNextPage}>
+        <button className="page" onClick={() => nextPage()} disabled={!canNextPage}>
           Next
         </button>{' '}
-        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+        <button className="page" onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
           {'>>'}
         </button>{' '}
         <span>
@@ -83,7 +83,7 @@ export const PaginationTable = () => {
         </span>
         <span class="page">
           | Go to page:{' '}
-          <input
+          <input className="page"
             type='number'
             defaultValue={pageIndex + 1}
             onChange={e => {
@@ -93,7 +93,7 @@ export const PaginationTable = () => {
             style={{ width: '30px' }}
           />
         </span>{' '}
-        <select
+        <select className="page"
           value={pageSize}
           onChange={e => setPageSize(Number(e.target.value))}>
           {[10, 25, 50].map(pageSize => (

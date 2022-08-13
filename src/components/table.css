@@ -2,7 +2,7 @@ table {
   font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
   /* table-layout: fixed;*/
   border-collapse: collapse;
-  width: 70%;
+  width: 1100px;
   margin-left: 380px;
   /* display: flex;  */
 }
@@ -73,13 +73,13 @@ table th {
     font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     /* table-layout: fixed;*/
     border-collapse: collapse;
-    width: auto;
+    width: 100px;
     height: auto;
-    margin-left: 110px;
+    margin-left: 105px;
     font-size: xx-small;
-
-
   }
+
+
 
   table td {
     border: 1px solid #ddd;
@@ -108,7 +108,8 @@ table th {
   .globalFilterStyle {
     margin-left: 110px;
     margin-top: 10px;
-    width: 50%;
+    width: 60%;
+    font-size: 10px;
 
   }
 
@@ -117,21 +118,27 @@ table th {
   }
 
   .pageStyle {
-    margin-left: 80px;
+    margin-left: 110px;
     margin-top: 50px;
-    font-size: x-small;
+    font-size: 8px;
     padding: 1px 1px 1px 1px;
-
     width: 60%;
   }
 
   .page {
-
+    font-size: 8px;
     margin-left: 1px;
   }
 
   #alignment {
     float: right;
+    margin-right: -490px;
+
+  }
+
+  .size {
+    width: 10px;
+
   }
 
   .pageStyle1 {
@@ -145,5 +152,20 @@ table th {
     padding: 20px 5px;
 
   }
+
+  .box {
+    width: 7px;
+  }
+
+  .ops {
+    font-size: 8px;
+    width: 33px;
+  }
+
+  .ops2 {
+    font-size: 8px;
+    width: 100px;
+  }
+
 
 }

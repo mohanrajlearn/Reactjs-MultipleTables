@@ -10,25 +10,17 @@
 /* Title css styles */
 
 .Title {
-
-  width: 100%;
-
   display: flex;
-  justify-content: LEFT;
-  align-items: baseline;
-  padding: 30px 20px 25px;
-
+  align-items: stretch;
+  padding: 30px 30px 25px;
   background-color: rgb(30, 44, 83);
-  color: #fff;
-  text-align: justify;
 }
 
 .Btable {
+  margin: 0 auto;
+  width: 50%;
   font-size: 20px;
-  text-align: center;
-  margin-right: 20em;
   padding: 20px;
-
 }
 
 .Content {
@@ -36,7 +28,6 @@
   text-align: right;
   margin-right: 1em;
   padding: 20px;
-
 }
 
 .data {
@@ -66,21 +57,9 @@
   margin-right: 23em;
 }
 
-#align2 {
-  margin-right: 16.4em;
-
-}
-
 a {
   text-decoration: none;
   color: #fff;
-}
-
-.subtopic2 {
-  font-size: 30px;
-  text-align: center;
-  margin-right: 12em;
-  padding: 20px;
 }
 
 .points2 {
@@ -97,13 +76,11 @@ a {
 
 .button {
   background-color: black;
-
   color: white;
   font-size: 15px;
   padding: 7px 10px;
   border-radius: 8px;
-
-  margin: 0px 950px;
+  margin: 0px 1130px;
   cursor: pointer;
 }
 
@@ -176,20 +153,18 @@ a {
 
 @media screen and (max-width: 600px) {
   body {
-
-    width: 600px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
 
   }
 
   .Title {
-
-    width: 80%;
+    width: 100%;
     font-size: 10px;
     display: flex;
-    justify-content: LEFT;
     align-items: baseline;
     padding: 30px 20px 25px;
-
     background-color: rgb(30, 44, 83);
     color: #fff;
   }
@@ -197,13 +172,13 @@ a {
   .button {
     background-color: black;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     padding: 7px 10px;
     border-radius: 8px;
-
-    margin: 0px 120px;
+    margin: 0px 100px;
     cursor: pointer;
   }
+
 
   .nameStyle {
     margin: 20px;
@@ -215,7 +190,6 @@ a {
     height: auto;
     min-height: 50px;
     width: 80px;
-
     color: #fff;
     display: flex;
     align-items: flex-start;
@@ -257,15 +231,15 @@ a {
   .Btable {
     font-size: 10px;
     text-align: center;
-    margin-right: 30em;
+    margin-right: 12em;
     padding: 20px;
 
   }
 
   .Content {
     font-size: 10px;
-    text-align: right;
-    margin-right: 22em;
+    text-align: center;
+    margin-right: 0px;
     padding: 10px;
 
   }
@@ -279,17 +253,6 @@ a {
     text-align: justify;
   }
 
-  #align2 {
-    margin-right: 4em;
-  }
-
-  .subtopic2 {
-    font-size: 15px;
-    text-align: center;
-    margin-right: 4em;
-    padding: 20px;
-  }
-
   .points2 {
     font-size: 10px;
     text-align: left;
@@ -299,9 +262,9 @@ a {
   }
 
   .subtopic {
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
-    margin-right: 4em;
+    margin-right: 6em;
     padding: 20px;
   }
 
@@ -313,7 +276,12 @@ a {
   }
 
   #align {
-    margin-right: 4.5em;
+    margin-right: -10px;
+    font-size: 12px;
+  }
+
+  .cfilter {
+    display: none;
   }
 
 }

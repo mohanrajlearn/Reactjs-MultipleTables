@@ -183,7 +183,7 @@ export const OperationsTable = () => {
           placeholder="Enter an avatar..."
           onChange={handleAddFormChange}          
         />
-        <button type="submit">Add</button>
+        <button className="ops" type="submit">Add</button>
       </form>
       </div>
     </div>

@@ -7,9 +7,8 @@ function Title() {
   return (
     <div className="Title">
       <h2><a href="/">REACT&nbsp;&nbsp;DATATABLES</a></h2>
-      <button class="button"><a target="_blank" href="https://github.com/mohanrajlearn/Reactjs-MultipleTables">Download</a></button>
-      
-</div>
+      <button class="button"><a target="_blank" rel="noopener noreferrer" href="https://github.com/mohanrajlearn/Reactjs-MultipleTables">Download</a></button>
+      </div>
   )
 }
 

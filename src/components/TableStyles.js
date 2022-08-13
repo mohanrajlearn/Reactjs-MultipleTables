@@ -1,33 +1,29 @@
 import styled from 'styled-components'
 
-export const Styles = styled.div`
-@media (max-width: 600px) {
-  
-  .table {
-     
-  font-size: x-small; 
-   
-  }
-  
+export const Styles = styled.div` 
 
-}
   .table {
-    border: 1px solid #ddd;
-    table-layout: fixed;
+    border: 1px solid #ddd; 
   border-collapse: collapse;
-  width: 100%;
+  width: 750px;
+  height:450px;
+   
   margin-left: 380px;
     .tr {
       :last-child {
         .td {
           border-bottom: 0;
+           
         }
       }
     }
-
+  
     .th,
     .td {
-      padding: 10px;
+       
+      padding: 5px;
+      font-size:12px;
+       
       border-bottom: 1px solid #ddd;
       border-right: 1px solid #ddd;
       background-color: #fff;
@@ -35,6 +31,7 @@ export const Styles = styled.div`
 
       :last-child {
         border-right: 0;
+         
       }
     }
 
@@ -44,7 +41,7 @@ export const Styles = styled.div`
       .footer {
         position: sticky;
         z-index: 1;
-        width: fit-content;
+        width: fit-content; 
       }
 
       .header {
@@ -62,6 +59,8 @@ export const Styles = styled.div`
         z-index: 0;
       }
 
+      
+
       [data-sticky-td] {
         position: sticky;
       }
@@ -74,5 +73,6 @@ export const Styles = styled.div`
         box-shadow: -2px 0px 3px #ccc;
       }
     }
-  }
+   
 `
+

@@ -1,4 +1,5 @@
 import React from "react";
+import '../components/table.css'
 // import { Link } from 'react-router-dom';
 
 const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
@@ -15,12 +16,12 @@ const ReadOnlyRow = ({ contact, handleEditClick, handleDeleteClick }) => {
       /></td>
       <td>
         <button
-          type="button"
+          type="button" className="ops"
           onClick={(event) => handleEditClick(event, contact)}
         >
           Edit
         </button>
-        <button type="button" onClick={() => handleDeleteClick(contact.id)}>
+        <button type="button" className="ops" onClick={() => handleDeleteClick(contact.id)}>
           Delete
         </button>
       </td>

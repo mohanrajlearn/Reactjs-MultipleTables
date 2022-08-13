@@ -15,7 +15,7 @@ export const RowSelection = () => {
     headerGroups,
     rows,
     prepareRow,
-    selectedFlatRows
+    // selectedFlatRows
   } = useTable(
     {
       columns,
@@ -27,9 +27,9 @@ export const RowSelection = () => {
         {
           id: 'selection',
           Header: ({ getToggleAllRowsSelectedProps }) => (
-            <Checkbox {...getToggleAllRowsSelectedProps()} />
+            <Checkbox className="box" {...getToggleAllRowsSelectedProps()} />
           ),
-          Cell: ({ row }) => <Checkbox {...row.getToggleRowSelectedProps()} />
+          Cell: ({ row }) => <Checkbox className="box"  {...row.getToggleRowSelectedProps()} />
         },
         ...columns
       ])
@@ -66,7 +66,7 @@ export const RowSelection = () => {
           })}
         </tbody>
       </table>
-      <pre>
+      {/* <pre>
         <code>
           {JSON.stringify(
             {
@@ -76,7 +76,7 @@ export const RowSelection = () => {
             2
           )}
         </code>
-      </pre>
+      </pre> */}
     </>
   )
 }
